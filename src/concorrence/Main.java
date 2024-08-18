@@ -15,7 +15,7 @@ public class Main {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("Tarefa 1 executada por: " + Thread.currentThread().getName());
+            System.out.println("Task 1 executada por: " + Thread.currentThread().getName());
             return 10;
         }, executor);
 
@@ -25,7 +25,7 @@ public class Main {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("Tarefa 2 executada por: " + Thread.currentThread().getName());
+            System.out.println("Task 2 executada por: " + Thread.currentThread().getName());
             return 20;
         }, executor);
 
