@@ -17,6 +17,8 @@ public class Main {
             }
             System.out.println("Task 1 executada por: " + Thread.currentThread().getName());
             return 10;
+            
+            
         }, executor);
 
         CompletableFuture<Integer> tarefa2 = CompletableFuture.supplyAsync(() -> {
