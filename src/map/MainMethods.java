@@ -8,9 +8,12 @@ public class MainMethods {
 	public static void main(String[] args) {
 //		compute();
 //		putIfAbsent();
+		getOrDefault();
 		
+	}
+
+	private static void getOrDefault() {
 		Map<Integer, Integer> map = new HashMap<>();
-//		map.put(1, null)
 		
 		int result = map.getOrDefault(1, -1);
 		System.out.println(result);
@@ -18,7 +21,6 @@ public class MainMethods {
 		map.put(1, 1000);
 		result = map.getOrDefault(1, -1);
 		System.out.println(result);
-		
 	}
 
 	private static void putIfAbsent() {
